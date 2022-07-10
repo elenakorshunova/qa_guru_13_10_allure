@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class IssuerWebSteps {
+public class IssueWebSteps {
 
     @Step("Ищем репозиторий по имени {repository}")
     public void searchForRepository(String repository) {

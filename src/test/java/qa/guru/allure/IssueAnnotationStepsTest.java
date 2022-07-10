@@ -8,7 +8,7 @@ public class IssueAnnotationStepsTest extends TestBase {
     @Test
     @DisplayName("Тест с использованием степов с аннотациями")
     public void testAnnotatedSteps() {
-        IssuerWebSteps steps = new IssuerWebSteps();
+        IssueWebSteps steps = new IssueWebSteps();
         steps.searchForRepository(REPOSITORY);
         steps.openRepositoryLink(REPOSITORY);
         steps.openIssueTab();
@@ -19,7 +19,7 @@ public class IssueAnnotationStepsTest extends TestBase {
     @Test
     @DisplayName("Ошибочный тест с использованием степов с аннотациями")
     public void testWithError() {
-        IssuerWebSteps steps = new IssuerWebSteps();
+        IssueWebSteps steps = new IssueWebSteps();
         steps.searchForRepository(REPOSITORY);
         steps.openRepositoryLink(ISSUE_NAME);
         steps.openIssueTab();
