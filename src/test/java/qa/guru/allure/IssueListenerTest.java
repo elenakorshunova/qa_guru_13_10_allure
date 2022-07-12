@@ -14,7 +14,7 @@ public class IssueListenerTest extends TestBase {
     @DisplayName("Тест с использованием Listener")
     public void testWithListener() {
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys("selenide/selenide");
+        $(".header-search-input").setValue("selenide/selenide");
         $(".header-search-input").submit();
         $(linkText("selenide/selenide")).click();
         $("#issues-tab").click();
